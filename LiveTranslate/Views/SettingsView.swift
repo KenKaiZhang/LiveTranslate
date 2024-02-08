@@ -10,7 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     
     @State private var showingSettings = false
-    @State private var targetProperty = User.mainColor
+    @State private var targetProperty = "main"
     @State private var targetColor = "hello"
     
     var body: some View {
@@ -25,11 +25,13 @@ struct SettingsView: View {
         }
         .sheet(isPresented: $showingSettings) {
             NavigationView {
-                HStack {
+                VStack {
                     Picker("", selection: $targetProperty) {
-                        Text("Main").tag(User.mainColor)
-                        Text("Secondary").tag(User.secondaryColor)
+                        Text("Main").tag("main")
+                        Text("Secondary").tag("secondary")
                     }
+                    .padding()
+                    ThemePickerView(main: .constant(targetProperty == "main"))
                 }
                 .toolbar {
                     ToolbarItem(placement: .confirmationAction) {

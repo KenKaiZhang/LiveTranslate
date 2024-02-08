@@ -13,6 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            SettingsView()
             ConversationView(conversation: $conversation)
             Rectangle()
                 .fill(Color(UIColor.lightGray))

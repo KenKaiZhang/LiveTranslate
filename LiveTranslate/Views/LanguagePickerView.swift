@@ -9,8 +9,9 @@ import SwiftUI
 
 struct LanguagePickerView<Content: View>: View {
     let content: Content
-    @Binding var selection: Language
+    @EnvironmentObject var user: User
     
+    @Binding var selection: Language
     @State private var showingPicker = false
     
     init(selection: Binding<Language>, @ViewBuilder content: () -> Content) {
@@ -43,7 +44,7 @@ struct LanguagePickerView<Content: View>: View {
                                 .foregroundStyle(selected ? .white : .black)
                                 .fontWeight(selected ? .bold : .light)
                         }
-                        .listRowBackground(selected ? User.mainColor : .white)
+                        .listRowBackground(selected ? hex2Color(hex: user.mainTheme.details.hex) : .white)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     }
                     .toolbar {
@@ -63,8 +64,9 @@ struct LanguagePickerView<Content: View>: View {
     }
 }
 
-#Preview {
-    LanguagePickerView(selection: .constant(.english)) {
-        RecordButtonView(recording: .constant(false), color: User.secondaryColor) {}
-    }
-}
+//#Preview {
+//    @EnvironmentObject var user: User
+//    LanguagePickerView(selection: .constant(.english)) {
+//        RecordButtonView(recording: .constant(false), color: hex2Color(hex: user.mainTheme.details.hex)) {}
+//    }
+//}

@@ -8,7 +8,8 @@
 import Foundation
 import SwiftUI
 
-public struct User {
-    static var mainColor: Color = hex2Color(hex: "#6197FF")
-    static var secondaryColor: Color = hex2Color(hex: "#50E8C3")
+public class User: ObservableObject {
+    @Published var mainTheme: Theme = .azure
+    @Published var secondaryTheme: Theme = .lime
+    static var defaultTheme: Theme = .ash
 }

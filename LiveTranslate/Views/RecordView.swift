@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RecordView: View {
     
+    @EnvironmentObject var user: User
     @Binding var conversation: Conversation
     
     @State private var language1: Language = .english
@@ -72,7 +73,10 @@ struct RecordView: View {
     
     private func recordButton(selection: Binding<Language>, recordingState: RecordingState) -> some View {
         LanguagePickerView(selection: selection) {
-            RecordButtonView(recording: .constant(recording == recordingState), color: recordingState.color) {
+            RecordButtonView(
+                recording: .constant(recording == recordingState),
+                color: hex2Color(hex:recordingState == .recording1 ? user.mainTheme.details.hex : user.secondaryTheme.details.hex)
+            ) {
                 speakerPicker = recordingState == .recording1
                 toggleRecording(newState: recordingState)
             }

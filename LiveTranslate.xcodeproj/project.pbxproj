@@ -28,6 +28,8 @@
 		3188E5132B6B58D200DA4C86 /* hex2Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188E5122B6B58D200DA4C86 /* hex2Color.swift */; };
 		3188E5152B6B60BC00DA4C86 /* RecordButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188E5142B6B60BC00DA4C86 /* RecordButtonView.swift */; };
 		3188E5172B6B877E00DA4C86 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3188E5162B6B877E00DA4C86 /* SettingsView.swift */; };
+		319E1D5B2B7499A900BA165E /* ThemerPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319E1D5A2B7499A900BA165E /* ThemerPickerView.swift */; };
+		319E1D5D2B7499FF00BA165E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319E1D5C2B7499FF00BA165E /* Theme.swift */; };
 		31AF49B42B5E20FB00A5461D /* LiveSpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AF49B32B5E20FB00A5461D /* LiveSpeechRecognizer.swift */; };
 		31AF49B62B5EEA6E00A5461D /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AF49B52B5EEA6E00A5461D /* Speaker.swift */; };
 		31AF49B82B5F961300A5461D /* TextBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AF49B72B5F961300A5461D /* TextBubbleView.swift */; };
@@ -80,6 +82,8 @@
 		3188E5142B6B60BC00DA4C86 /* RecordButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButtonView.swift; sourceTree = "<group>"; };
 		3188E5162B6B877E00DA4C86 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		319E1D592B748D2400BA165E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		319E1D5A2B7499A900BA165E /* ThemerPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemerPickerView.swift; sourceTree = "<group>"; };
+		319E1D5C2B7499FF00BA165E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		31AF49B32B5E20FB00A5461D /* LiveSpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSpeechRecognizer.swift; sourceTree = "<group>"; };
 		31AF49B52B5EEA6E00A5461D /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
 		31AF49B72B5F961300A5461D /* TextBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBubbleView.swift; sourceTree = "<group>"; };
@@ -201,6 +205,7 @@
 				3104B9672B6190400093728A /* Conversation.swift */,
 				3188E5102B6B576700DA4C86 /* User.swift */,
 				313085042B6DEB4700C9F013 /* RecordingState.swift */,
+				319E1D5C2B7499FF00BA165E /* Theme.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 				3104B96B2B6303D80093728A /* TranscriptView.swift */,
 				3188E5142B6B60BC00DA4C86 /* RecordButtonView.swift */,
 				3188E5162B6B877E00DA4C86 /* SettingsView.swift */,
+				319E1D5A2B7499A900BA165E /* ThemerPickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -446,7 +452,9 @@
 				3134592E2B59AFED00407D4E /* Language.swift in Sources */,
 				31AF49B42B5E20FB00A5461D /* LiveSpeechRecognizer.swift in Sources */,
 				313459032B59AE4A00407D4E /* LiveTranslateApp.swift in Sources */,
+				319E1D5D2B7499FF00BA165E /* Theme.swift in Sources */,
 				3104B9682B6190400093728A /* Conversation.swift in Sources */,
+				319E1D5B2B7499A900BA165E /* ThemerPickerView.swift in Sources */,
 				3188E5132B6B58D200DA4C86 /* hex2Color.swift in Sources */,
 				313459352B5B8CD800407D4E /* ConversationView.swift in Sources */,
 			);

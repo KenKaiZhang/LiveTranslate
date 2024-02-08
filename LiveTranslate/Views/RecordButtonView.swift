@@ -25,6 +25,10 @@ struct RecordButtonView: View {
     }
 }
 
-#Preview {
-    RecordButtonView(recording: .constant(true), color: User.mainColor, action: {})
-}
+//#Preview {
+//    @EnvironmentObject var user: User
+//    RecordButtonView(
+//        recording: .constant(true),
+//        color: hex2Color(hex: user.mainTheme.details.hex), 
+//        action: {})
+//}

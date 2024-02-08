@@ -10,8 +10,11 @@ import SwiftUI
 @main
 struct LiveTranslateApp: App {
     var body: some Scene {
+        var user = User()
+        
         WindowGroup {
             ContentView()
+                .environmentObject(user)
         }
     }
 }

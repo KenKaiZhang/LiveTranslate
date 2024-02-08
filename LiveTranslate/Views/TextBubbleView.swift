@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TextBubbleView: View {
     
+    @EnvironmentObject var user: User
+    
     var native: String
     var translation: String
     var main: Bool
@@ -23,7 +25,9 @@ struct TextBubbleView: View {
         }
         .padding()
         .foregroundColor(.white)
-        .background(Color(main ? User.mainColor : User.secondaryColor))
+        .background(Color(main
+                          ? hex2Color(hex: user.mainTheme.details.hex)
+                          : hex2Color(hex: user.secondaryTheme.details.hex)))
         .clipShape(Rectangle())
         .cornerRadius(10)
     }

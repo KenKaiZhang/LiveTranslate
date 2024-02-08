@@ -41,4 +41,10 @@ History of conversation in a “iMessage” like format is implemented.
 
 Seamless switching between modes is working.
 
+### 02/07/2024
 
+Added a "good for now" color picker.
+
+Code is kind of messy and **definetly needs some cleaning up**, but color for button and text bubbles will change according to the theme selected.
+
+Need to add a light/dark mode and make sure that bubble text color adheres to the proper accent color.
